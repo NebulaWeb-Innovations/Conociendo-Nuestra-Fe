@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conociendo Nuestra Fe</title>
     <link rel="stylesheet" href="Styless.css">
+    <link rel="icon" href="Logo-Programa-De-Evangelizacion.ico">
+
+    <script>
+                // Script para animación al hacer scroll
+                window.addEventListener('scroll', function() {
+                    const elements = document.querySelectorAll('.fade-in');
+                    elements.forEach(el => {
+                        const position = el.getBoundingClientRect().top;
+                        if (position - window.innerHeight <= 0) {
+                            el.classList.add('visible');
+                        }
+                    });
+                });
+    </script>
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="Logo Programa De Evangelizacion.png" alt="Logo" height="350px" width="400px">
+            <img src="Logo Programa De Evangelizacion.png" alt="Programa De Evangelizacion">
             <h1>Parroquia Todos Los Santos</h1>
             <p>Conociendo Nuestra Fe</p>
-        </div>
+
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -41,5 +54,7 @@
         </div>     
     </footer>
 </body>
+</html>
+
 </html>
 
